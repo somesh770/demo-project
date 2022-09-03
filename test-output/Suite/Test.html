@@ -1,0 +1,648 @@
+<html>
+<head>
+<title>TestNG:  Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>0/0/7</td>
+</tr><tr>
+<td>Started on:</td><td>Sun Aug 07 16:06:10 IST 2022</td>
+</tr>
+<tr><td>Total time:</td><td>0 seconds (117 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='Com.SacuceDemoTESTclass.TC001_VarifyLogInFuctionality.setUp()'><b>setUp</b><br>Test class: Com.SacuceDemoTESTclass.TC001_VarifyLogInFuctionality</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;BrowserName&apos; is required by BeforeMethod on method setUp but has not been marked @Optional or defined
+in C:\Users\admin\eclipse-workspace\java practice\SauceDemoMavenProject\testng.xml
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace999736366", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace999736366'><pre>org.testng.TestNGException: 
+Parameter &apos;BrowserName&apos; is required by BeforeMethod on method setUp but has not been marked @Optional or defined
+in C:\Users\admin\eclipse-workspace\java practice\SauceDemoMavenProject\testng.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:290)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:359)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:620)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:190)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:209)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:523)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>Com.SacuceDemoTESTclass.TC001_VarifyLogInFuctionality@7b8b43c7</td></tr>
+<tr>
+<td title='Com.SacuceDemoTESTclass.TC002_VarifyLogOutFuctionality.setUp()'><b>setUp</b><br>Test class: Com.SacuceDemoTESTclass.TC002_VarifyLogOutFuctionality</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;BrowserName&apos; is required by BeforeMethod on method setUp but has not been marked @Optional or defined
+in C:\Users\admin\eclipse-workspace\java practice\SauceDemoMavenProject\testng.xml
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1241480588", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1241480588'><pre>org.testng.TestNGException: 
+Parameter &apos;BrowserName&apos; is required by BeforeMethod on method setUp but has not been marked @Optional or defined
+in C:\Users\admin\eclipse-workspace\java practice\SauceDemoMavenProject\testng.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:290)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:359)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:620)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:190)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:209)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:523)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>Com.SacuceDemoTESTclass.TC002_VarifyLogOutFuctionality@7aaca91a</td></tr>
+<tr>
+<td title='Com.SacuceDemoTESTclass.TC003_VarifyAbleToBuyProduct.setUp()'><b>setUp</b><br>Test class: Com.SacuceDemoTESTclass.TC003_VarifyAbleToBuyProduct</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;BrowserName&apos; is required by BeforeMethod on method setUp but has not been marked @Optional or defined
+in C:\Users\admin\eclipse-workspace\java practice\SauceDemoMavenProject\testng.xml
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2142852357", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2142852357'><pre>org.testng.TestNGException: 
+Parameter &apos;BrowserName&apos; is required by BeforeMethod on method setUp but has not been marked @Optional or defined
+in C:\Users\admin\eclipse-workspace\java practice\SauceDemoMavenProject\testng.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:290)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:359)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:620)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:190)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:209)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:523)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>Com.SacuceDemoTESTclass.TC003_VarifyAbleToBuyProduct@44c73c26</td></tr>
+<tr>
+<td title='Com.SacuceDemoTESTclass.TC004_VarifyAddMultipleProductInCart.setUp()'><b>setUp</b><br>Test class: Com.SacuceDemoTESTclass.TC004_VarifyAddMultipleProductInCart</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;BrowserName&apos; is required by BeforeMethod on method setUp but has not been marked @Optional or defined
+in C:\Users\admin\eclipse-workspace\java practice\SauceDemoMavenProject\testng.xml
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1355887174", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1355887174'><pre>org.testng.TestNGException: 
+Parameter &apos;BrowserName&apos; is required by BeforeMethod on method setUp but has not been marked @Optional or defined
+in C:\Users\admin\eclipse-workspace\java practice\SauceDemoMavenProject\testng.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:290)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:359)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:620)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:190)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:209)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:523)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>Com.SacuceDemoTESTclass.TC004_VarifyAddMultipleProductInCart@41005828</td></tr>
+<tr>
+<td title='Com.SacuceDemoTESTclass.TC005_VarifyFilterDropdownFunctionality.setUp()'><b>setUp</b><br>Test class: Com.SacuceDemoTESTclass.TC005_VarifyFilterDropdownFunctionality</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;BrowserName&apos; is required by BeforeMethod on method setUp but has not been marked @Optional or defined
+in C:\Users\admin\eclipse-workspace\java practice\SauceDemoMavenProject\testng.xml
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1262548561", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1262548561'><pre>org.testng.TestNGException: 
+Parameter &apos;BrowserName&apos; is required by BeforeMethod on method setUp but has not been marked @Optional or defined
+in C:\Users\admin\eclipse-workspace\java practice\SauceDemoMavenProject\testng.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:290)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:359)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:620)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:190)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:209)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:523)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>Com.SacuceDemoTESTclass.TC005_VarifyFilterDropdownFunctionality@60b4beb4</td></tr>
+<tr>
+<td title='Com.SacuceDemoTESTclass.TC006_VarifyoneProductAddedTocart.setUp()'><b>setUp</b><br>Test class: Com.SacuceDemoTESTclass.TC006_VarifyoneProductAddedTocart</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;BrowserName&apos; is required by BeforeMethod on method setUp but has not been marked @Optional or defined
+in C:\Users\admin\eclipse-workspace\java practice\SauceDemoMavenProject\testng.xml
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1180858072", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1180858072'><pre>org.testng.TestNGException: 
+Parameter &apos;BrowserName&apos; is required by BeforeMethod on method setUp but has not been marked @Optional or defined
+in C:\Users\admin\eclipse-workspace\java practice\SauceDemoMavenProject\testng.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:290)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:359)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:620)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:190)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:209)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:523)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>Com.SacuceDemoTESTclass.TC006_VarifyoneProductAddedTocart@7fcf2fc1</td></tr>
+<tr>
+<td title='Com.SacuceDemoTESTclass.TC007_VarifyAbout.setUp()'><b>setUp</b><br>Test class: Com.SacuceDemoTESTclass.TC007_VarifyAbout</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;BrowserName&apos; is required by BeforeMethod on method setUp but has not been marked @Optional or defined
+in C:\Users\admin\eclipse-workspace\java practice\SauceDemoMavenProject\testng.xml
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace729218894", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace729218894'><pre>org.testng.TestNGException: 
+Parameter &apos;BrowserName&apos; is required by BeforeMethod on method setUp but has not been marked @Optional or defined
+in C:\Users\admin\eclipse-workspace\java practice\SauceDemoMavenProject\testng.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:290)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:359)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:620)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:190)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:209)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:523)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>Com.SacuceDemoTESTclass.TC007_VarifyAbout@2141a12</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='Com.SacuceDemoTESTclass.TC001_VarifyLogInFuctionality.tearDown()'><b>tearDown</b><br>Test class: Com.SacuceDemoTESTclass.TC001_VarifyLogInFuctionality</td>
+<td></td>
+<td>0</td>
+<td>Com.SacuceDemoTESTclass.TC001_VarifyLogInFuctionality@7b8b43c7</td></tr>
+<tr>
+<td title='Com.SacuceDemoTESTclass.TC002_VarifyLogOutFuctionality.tearDown()'><b>tearDown</b><br>Test class: Com.SacuceDemoTESTclass.TC002_VarifyLogOutFuctionality</td>
+<td></td>
+<td>0</td>
+<td>Com.SacuceDemoTESTclass.TC002_VarifyLogOutFuctionality@7aaca91a</td></tr>
+<tr>
+<td title='Com.SacuceDemoTESTclass.TC003_VarifyAbleToBuyProduct.tearDown()'><b>tearDown</b><br>Test class: Com.SacuceDemoTESTclass.TC003_VarifyAbleToBuyProduct</td>
+<td></td>
+<td>0</td>
+<td>Com.SacuceDemoTESTclass.TC003_VarifyAbleToBuyProduct@44c73c26</td></tr>
+<tr>
+<td title='Com.SacuceDemoTESTclass.TC004_VarifyAddMultipleProductInCart.tearDown()'><b>tearDown</b><br>Test class: Com.SacuceDemoTESTclass.TC004_VarifyAddMultipleProductInCart</td>
+<td></td>
+<td>0</td>
+<td>Com.SacuceDemoTESTclass.TC004_VarifyAddMultipleProductInCart@41005828</td></tr>
+<tr>
+<td title='Com.SacuceDemoTESTclass.TC005_VarifyFilterDropdownFunctionality.tearDown()'><b>tearDown</b><br>Test class: Com.SacuceDemoTESTclass.TC005_VarifyFilterDropdownFunctionality</td>
+<td></td>
+<td>0</td>
+<td>Com.SacuceDemoTESTclass.TC005_VarifyFilterDropdownFunctionality@60b4beb4</td></tr>
+<tr>
+<td title='Com.SacuceDemoTESTclass.TC006_VarifyoneProductAddedTocart.tearDown()'><b>tearDown</b><br>Test class: Com.SacuceDemoTESTclass.TC006_VarifyoneProductAddedTocart</td>
+<td></td>
+<td>0</td>
+<td>Com.SacuceDemoTESTclass.TC006_VarifyoneProductAddedTocart@7fcf2fc1</td></tr>
+<tr>
+<td title='Com.SacuceDemoTESTclass.TC007_VarifyAbout.tearDown()'><b>tearDown</b><br>Test class: Com.SacuceDemoTESTclass.TC007_VarifyAbout</td>
+<td></td>
+<td>0</td>
+<td>Com.SacuceDemoTESTclass.TC007_VarifyAbout@2141a12</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='Com.SacuceDemoTESTclass.TC007_VarifyAbout.aboutFunctionality()'><b>aboutFunctionality</b><br>Test class: Com.SacuceDemoTESTclass.TC007_VarifyAbout</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;BrowserName&apos; is required by BeforeMethod on method setUp but has not been marked @Optional or defined
+in C:\Users\admin\eclipse-workspace\java practice\SauceDemoMavenProject\testng.xml
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2048013503", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2048013503'><pre>org.testng.TestNGException: 
+Parameter &apos;BrowserName&apos; is required by BeforeMethod on method setUp but has not been marked @Optional or defined
+in C:\Users\admin\eclipse-workspace\java practice\SauceDemoMavenProject\testng.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:290)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:359)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:620)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:190)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:209)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:523)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>Com.SacuceDemoTESTclass.TC007_VarifyAbout@2141a12</td></tr>
+<tr>
+<td title='Com.SacuceDemoTESTclass.TC003_VarifyAbleToBuyProduct.buyBagFuctionality()'><b>buyBagFuctionality</b><br>Test class: Com.SacuceDemoTESTclass.TC003_VarifyAbleToBuyProduct</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;BrowserName&apos; is required by BeforeMethod on method setUp but has not been marked @Optional or defined
+in C:\Users\admin\eclipse-workspace\java practice\SauceDemoMavenProject\testng.xml
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace93054696", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace93054696'><pre>org.testng.TestNGException: 
+Parameter &apos;BrowserName&apos; is required by BeforeMethod on method setUp but has not been marked @Optional or defined
+in C:\Users\admin\eclipse-workspace\java practice\SauceDemoMavenProject\testng.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:290)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:359)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:620)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:190)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:209)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:523)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>Com.SacuceDemoTESTclass.TC003_VarifyAbleToBuyProduct@44c73c26</td></tr>
+<tr>
+<td title='Com.SacuceDemoTESTclass.TC005_VarifyFilterDropdownFunctionality.filterDropDownFunctionality()'><b>filterDropDownFunctionality</b><br>Test class: Com.SacuceDemoTESTclass.TC005_VarifyFilterDropdownFunctionality</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;BrowserName&apos; is required by BeforeMethod on method setUp but has not been marked @Optional or defined
+in C:\Users\admin\eclipse-workspace\java practice\SauceDemoMavenProject\testng.xml
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1118840610", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1118840610'><pre>org.testng.TestNGException: 
+Parameter &apos;BrowserName&apos; is required by BeforeMethod on method setUp but has not been marked @Optional or defined
+in C:\Users\admin\eclipse-workspace\java practice\SauceDemoMavenProject\testng.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:290)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:359)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:620)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:190)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:209)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:523)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>Com.SacuceDemoTESTclass.TC005_VarifyFilterDropdownFunctionality@60b4beb4</td></tr>
+<tr>
+<td title='Com.SacuceDemoTESTclass.TC001_VarifyLogInFuctionality.logInfunctionality()'><b>logInfunctionality</b><br>Test class: Com.SacuceDemoTESTclass.TC001_VarifyLogInFuctionality</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;BrowserName&apos; is required by BeforeMethod on method setUp but has not been marked @Optional or defined
+in C:\Users\admin\eclipse-workspace\java practice\SauceDemoMavenProject\testng.xml
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace858232531", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace858232531'><pre>org.testng.TestNGException: 
+Parameter &apos;BrowserName&apos; is required by BeforeMethod on method setUp but has not been marked @Optional or defined
+in C:\Users\admin\eclipse-workspace\java practice\SauceDemoMavenProject\testng.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:290)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:359)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:620)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:190)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:209)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:523)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>Com.SacuceDemoTESTclass.TC001_VarifyLogInFuctionality@7b8b43c7</td></tr>
+<tr>
+<td title='Com.SacuceDemoTESTclass.TC002_VarifyLogOutFuctionality.logOutfuctionality()'><b>logOutfuctionality</b><br>Test class: Com.SacuceDemoTESTclass.TC002_VarifyLogOutFuctionality</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;BrowserName&apos; is required by BeforeMethod on method setUp but has not been marked @Optional or defined
+in C:\Users\admin\eclipse-workspace\java practice\SauceDemoMavenProject\testng.xml
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace693267461", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace693267461'><pre>org.testng.TestNGException: 
+Parameter &apos;BrowserName&apos; is required by BeforeMethod on method setUp but has not been marked @Optional or defined
+in C:\Users\admin\eclipse-workspace\java practice\SauceDemoMavenProject\testng.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:290)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:359)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:620)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:190)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:209)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:523)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>Com.SacuceDemoTESTclass.TC002_VarifyLogOutFuctionality@7aaca91a</td></tr>
+<tr>
+<td title='Com.SacuceDemoTESTclass.TC004_VarifyAddMultipleProductInCart.multipleProductAddTOCard()'><b>multipleProductAddTOCard</b><br>Test class: Com.SacuceDemoTESTclass.TC004_VarifyAddMultipleProductInCart</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;BrowserName&apos; is required by BeforeMethod on method setUp but has not been marked @Optional or defined
+in C:\Users\admin\eclipse-workspace\java practice\SauceDemoMavenProject\testng.xml
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace735085430", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace735085430'><pre>org.testng.TestNGException: 
+Parameter &apos;BrowserName&apos; is required by BeforeMethod on method setUp but has not been marked @Optional or defined
+in C:\Users\admin\eclipse-workspace\java practice\SauceDemoMavenProject\testng.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:290)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:359)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:620)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:190)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:209)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:523)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>Com.SacuceDemoTESTclass.TC004_VarifyAddMultipleProductInCart@41005828</td></tr>
+<tr>
+<td title='Com.SacuceDemoTESTclass.TC006_VarifyoneProductAddedTocart.oneProductAddToCard()'><b>oneProductAddToCard</b><br>Test class: Com.SacuceDemoTESTclass.TC006_VarifyoneProductAddedTocart</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;BrowserName&apos; is required by BeforeMethod on method setUp but has not been marked @Optional or defined
+in C:\Users\admin\eclipse-workspace\java practice\SauceDemoMavenProject\testng.xml
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1558763625", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1558763625'><pre>org.testng.TestNGException: 
+Parameter &apos;BrowserName&apos; is required by BeforeMethod on method setUp but has not been marked @Optional or defined
+in C:\Users\admin\eclipse-workspace\java practice\SauceDemoMavenProject\testng.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:290)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:359)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:620)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:190)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:209)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:523)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>Com.SacuceDemoTESTclass.TC006_VarifyoneProductAddedTocart@7fcf2fc1</td></tr>
+</table><p>
+</body>
+</html>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test  thread-count="5" name="CrossBrowser">
+  <parameter name="BrowserName" value="chrome"></parameter>
+    <classes>
+       <class name="Com.SacuceDemoTESTclass.TC001_VarifyLogInFuctionality"/>
+      <class name="Com.SacuceDemoTESTclass.TC002_VarifyLogOutFuctionality"/>
+      <class name="Com.SacuceDemoTESTclass.TC003_VarifyAbleToBuyProduct"/>
+     <class name="Com.SacuceDemoTESTclass.TC004_VarifyAddMultipleProductInCart"/>
+      <class name="Com.SacuceDemoTESTclass.TC005_VarifyFilterDropdownFunctionality"/>
+      <class name="Com.SacuceDemoTESTclass.TC007_VarifyAbout"/>
+      <class name="Com.SacuceDemoTESTclass.TC006_VarifyoneProductAddedTocart"/>
+          
+    </classes>
+  </test> <!-- CrossBrowser -->
+</suite> <!-- Suite -->

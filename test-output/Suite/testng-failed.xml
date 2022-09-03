@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="Com.SacuceDemoTESTclass.TC005_VarifyFilterDropdownFunctionality">
+        <methods>
+          <include name="tearDown"/>
+          <include name="filterDropDownFunctionality"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- Com.SacuceDemoTESTclass.TC005_VarifyFilterDropdownFunctionality -->
+      <class name="Com.SacuceDemoTESTclass.TC003_VarifyAbleToBuyProduct">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="buyBagFuctionality"/>
+        </methods>
+      </class> <!-- Com.SacuceDemoTESTclass.TC003_VarifyAbleToBuyProduct -->
+      <class name="Com.SacuceDemoTESTclass.TC001_VarifyLogInFuctionality">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="logInfunctionality"/>
+        </methods>
+      </class> <!-- Com.SacuceDemoTESTclass.TC001_VarifyLogInFuctionality -->
+      <class name="Com.SacuceDemoTESTclass.TC004_VarifyAddMultipleProductInCart">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="multipleProductAddTOCard"/>
+        </methods>
+      </class> <!-- Com.SacuceDemoTESTclass.TC004_VarifyAddMultipleProductInCart -->
+      <class name="Com.SacuceDemoTESTclass.TC007_VarifyAbout">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="aboutFunctionality"/>
+        </methods>
+      </class> <!-- Com.SacuceDemoTESTclass.TC007_VarifyAbout -->
+      <class name="Com.SacuceDemoTESTclass.TC006_VarifyoneProductAddedTocart">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="oneProductAddToCard"/>
+        </methods>
+      </class> <!-- Com.SacuceDemoTESTclass.TC006_VarifyoneProductAddedTocart -->
+      <class name="Com.SacuceDemoTESTclass.TC002_VarifyLogOutFuctionality">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="logOutfuctionality"/>
+        </methods>
+      </class> <!-- Com.SacuceDemoTESTclass.TC002_VarifyLogOutFuctionality -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
