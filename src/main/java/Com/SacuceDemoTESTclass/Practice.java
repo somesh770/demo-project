@@ -13,16 +13,22 @@ public class Practice {
 
 	public static void main(String[] args) 
 	{
-		WebDriverManager.chromedriver().setup();
-		WebDriver driver = new ChromeDriver();
-		
-		driver.get("https://vctcpune.com/selenium/practice.html");
-		
-		driver.manage().window().maximize();
-		
-		List<WebElement> Dropdowns= driver.findElements(By.tagName("select"));
-		
-		System.out.println(Dropdowns.size());
+		int temp = 0;
+		 int a[] = {1,2,3,3,4,5};
+		 
+		 for(int i=0; i<a.length; i++)
+		 {
+			 for(int j=0; j<a.length; j++)
+			 {
+				 if (a[i]!=a[j])
+				 {
+					 
+				 }
+						 
+			 }
+			 System.out.println(temp);
+		 }
+				 
 	}
 
 }
